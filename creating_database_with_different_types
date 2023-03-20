@@ -1,0 +1,28 @@
+CREATE DATABASE example_database;
+
+USE example_database;
+
+CREATE TABLE example_table (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  age INT,
+  height DECIMAL(4,2),
+  is_student BOOLEAN,
+  date_of_birth DATE,
+  email VARCHAR(100),
+  phone_number CHAR(10),
+  address TEXT,
+  salary FLOAT
+);
+
+"id" column is an integer type and set as the primary key.
+"name" column is a variable character type with a maximum length of 50 characters.
+"age" column is an integer type.
+"height" column is a decimal type with a precision of 4 and a scale of 2, which means it can store up to 2 decimal places.
+"is_student" column is a boolean type that can store true/false values.
+"date_of_birth" column is a date type that can store dates in YYYY-MM-DD format.
+"email" column is a variable character type with a maximum length of 100 characters.
+"phone_number" column is a fixed character type with a length of 10 characters.
+"address" column is a text type that can store large amounts of text data.
+"salary" column is a floating-point type.
+You can customize the data types and column names as per your requirements.
