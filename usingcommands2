@@ -1,0 +1,5 @@
+SELECT category, COUNT(*) AS num_products
+FROM products
+GROUP BY category
+HAVING COUNT(*) > 5
+ORDER BY num_products DESC;
