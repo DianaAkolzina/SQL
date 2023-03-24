@@ -1,0 +1,5 @@
+SELECT first_name, last_name, age
+FROM customers
+WHERE age BETWEEN 18 AND 30
+AND city = 'New York'
+ORDER BY last_name ASC;
