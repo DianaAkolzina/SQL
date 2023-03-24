@@ -1,0 +1,11 @@
+SELECT customers.first_name, customers.last_name, orders.total_amount
+FROM customers
+INNER JOIN (
+  SELECT order_id, customer_id, total_amount
+  FROM orders
+  WHERE total_amount > (
+    SELECT AVG(total_amount)
+    FROM orders
+  )
+) AS orders
+ON customers.customer_id = orders.customer_id;
